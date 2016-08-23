@@ -1,8 +1,11 @@
 require 'minitest/spec'
 require 'minitest/autorun'
+require 'minitest/reporters'
 
 require_relative '../lib/btcruby'
 require_relative '../lib/btcruby/extensions'
+
+MiniTest::Reporters.use!
 
 # So every test can access classes directly without prefixing them with BTC::
 #include BTC

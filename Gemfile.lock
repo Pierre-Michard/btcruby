@@ -1,18 +1,50 @@
 PATH
   remote: .
   specs:
-    btcruby (0.1.0)
+    btcruby (1.6)
       ffi (~> 1.9, >= 1.9.3)
 
 GEM
   remote: https://rubygems.org/
   specs:
-    ffi (1.9.3)
+    ansi (1.5.0)
+    builder (3.2.2)
+    diff-lcs (1.2.5)
+    ffi (1.9.14)
+    minitest (5.9.0)
+    minitest-reporters (1.1.10)
+      ansi
+      builder
+      minitest (>= 5.0)
+      ruby-progressbar
+    minitest-spec (0.0.2.1)
+      minitest (>= 3.0)
     rake (10.3.2)
+    rspec (3.5.0)
+      rspec-core (~> 3.5.0)
+      rspec-expectations (~> 3.5.0)
+      rspec-mocks (~> 3.5.0)
+    rspec-core (3.5.2)
+      rspec-support (~> 3.5.0)
+    rspec-expectations (3.5.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.5.0)
+    rspec-mocks (3.5.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.5.0)
+    rspec-support (3.5.0)
+    ruby-progressbar (1.8.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   btcruby!
+  minitest
+  minitest-reporters (>= 0.5.0)
+  minitest-spec
   rake
+  rspec (~> 3.0)
+
+BUNDLED WITH
+   1.12.5
